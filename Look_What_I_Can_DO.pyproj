@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>844ef2a1-7a38-434f-8ddb-35c9d0178417</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Look_What_I_Can_DO</Name>
+    <RootNamespace>LWICD</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+    <Compile Include="notes\dict_examples.py" />
+    <Compile Include="notes\lists_examples.py" />
+    <Compile Include="notes\loops_examples.py" />
+    <Compile Include="notes\misc_practice.py" />
+    <Compile Include="notes\parsing_examples.py" />
+    <Compile Include="notes\string_examples.py" />
+    <Compile Include="notes\__init__.py" />
+    <Compile Include="programs\calculator.py" />
+    <Compile Include="programs\number_sorter.py" />
+    <Compile Include="programs\password_system.py" />
+    <Compile Include="programs\reverse_word.py" />
+    <Compile Include="programs\task_list.py" />
+    <Compile Include="programs\tip_calculator.py" />
+    <Compile Include="programs\unique_word_sorter.py" />
+    <Compile Include="programs\word_repeater.py" />
+    <Compile Include="programs\year_check.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="notes\" />
+    <Folder Include="programs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
